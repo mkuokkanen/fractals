@@ -1,0 +1,35 @@
+###
+# generic files to ignore
+#
+
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.log
+
+###
+# Java related files to ignore
+#
+
+# compiled stuff
+*.class
+*.jar
+*.war
+*.ear
+
+# eclipse specific
+.classpath
+.project
+.settings/
+
+# intellij idea specific
+.idea/
+*.iml
+
+# eclipse and ant have dendency to create bin
+bin/
+
+# maven specific
+target/
