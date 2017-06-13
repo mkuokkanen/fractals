@@ -27,7 +27,13 @@ public class MandelbrotPoint {
     private final int escapeIteratoin;
     private final boolean bounded;
 
-
+    /**
+     * Calculates does given complex number belong to Mandelbrot.
+     *
+     * @param x          real part of complex number
+     * @param y          imaginary part of complex number
+     * @param iterations how many iterations to see if the number escapes to infinity or stays within limits
+     */
     public MandelbrotPoint(final double x, final double y, final int iterations) {
         checkArgument(iterations >= 1, "iterations must be bigger than 1, was %s", iterations);
 
@@ -90,22 +96,39 @@ public class MandelbrotPoint {
         return i;
     }
 
+    /**
+     * How many iterations are calculated with this complex number.
+     */
     public int getIterations() {
         return iterations;
     }
 
+    /**
+     * Real number value of this complex number.
+     */
     public double getcReal() {
         return cReal;
     }
 
+    /**
+     * Imaginary value of this complex number.
+     */
     public double getcImaginary() {
         return cImaginary;
     }
 
+    /**
+     * At what iteration it was found out that calculation goes to infinity.
+     * Returns iterations value if calculation didn't start going to infinity with given iterations.
+     */
     public int getEscapeIteration() {
         return escapeIteratoin;
     }
 
+    /**
+     * Returns true if calculation stayed within limits for given iterations.
+     * False if started going to infinity with given iterations.
+     */
     public boolean isBounded() {
         return bounded;
     }

@@ -15,9 +15,9 @@ import javax.swing.*;
  */
 public class BifurcationApplication {
 
-    private static final int DEFAULT_WIDTH = 640;
-    private static final int DEFAULT_HEIGHT = 400;
-    private static final String TITLE = "Bifurcation proto";
+    static final int DEFAULT_WIDTH = 640;
+    static final int DEFAULT_HEIGHT = 400;
+    static final String TITLE = "Bifurcation proto";
 
     /**
      * Constructor
