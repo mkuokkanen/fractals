@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fi.iki.mkuokkanen.fractals</groupId>
+    <groupId>fi.mkuokkanen.fractals</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -19,11 +19,13 @@
 
     <organization>
         <name>Mikko Kuokkanen</name>
-        <url>http://mkuokkanen.iki.fi</url>
+        <url>https://mkuokkanen.fi</url>
     </organization>
+
     <scm>
         <url>https://github.com/mkuokkanen/fractals</url>
     </scm>
+
     <issueManagement>
         <system>GitHub</system>
         <url>http://github.com/mkuokkanen/fractals/issues</url>
@@ -45,19 +47,19 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- utils -->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
 
+            <!-- log -->
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
                 <version>${groovy.version}</version>
             </dependency>
-
-            <!-- logging frameworks -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -73,8 +75,6 @@
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
             </dependency>
-
-
 
             <!-- testing frameworks -->
 

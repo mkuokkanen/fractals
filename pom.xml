@@ -6,7 +6,7 @@
 
     <parent>
         <artifactId>parent</artifactId>
-        <groupId>fi.iki.mkuokkanen.fractals</groupId>
+        <groupId>fi.mkuokkanen.fractals</groupId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>parent/pom.xml</relativePath>
     </parent>
@@ -22,6 +22,5 @@
         <module>bifurcation</module>
         <module>mandelbrot</module>
     </modules>
-
 
 </project>
